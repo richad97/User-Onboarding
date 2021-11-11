@@ -10,7 +10,7 @@ export default function Form(props) {
   const { onChange, onSubmit, disabled, form } = props;
 
   return (
-    <form onSubmit={onSubmit} style={formStyle}>
+    <form name="form" onSubmit={onSubmit} style={formStyle}>
       <label>
         Name:
         <input
@@ -47,7 +47,7 @@ export default function Form(props) {
           type="Checkbox"
         ></input>
       </label>
-      <button disabled={disabled} type="submit">
+      <button name="submitButton" disabled={disabled} type="submit">
         Submit
       </button>
     </form>
